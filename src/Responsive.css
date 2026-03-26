@@ -1,0 +1,13 @@
+@media (max-width:768px) {
+  .change-password-container {
+  background-color: #f6fbfa;
+  border-radius: 16px;
+  padding: 0px 40px;
+  margin: 0px auto;
+  font-family: "Satoshi";
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 94%;
+  margin-top: 2rem;
+}
+
+}

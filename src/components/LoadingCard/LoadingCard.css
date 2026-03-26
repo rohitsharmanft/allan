@@ -1,0 +1,23 @@
+.loadingCardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  background: #f7f9fc;
+}
+
+.loadingCardBox {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 35px 30px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 350px;
+}
+
+.loadingMessage {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #333;
+}

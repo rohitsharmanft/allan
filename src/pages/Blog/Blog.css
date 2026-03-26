@@ -1,0 +1,94 @@
+.blog-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: "Satoshi";
+  height: 100vh;
+}
+
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.blog-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.blog-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+}
+
+.blog-card-img {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 16px 20px;
+}
+
+.blog-tag {
+  display: inline-block;
+  background: #d7f2ed;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.blog-card-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 6px;
+}
+
+.blog-card-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+.btn-add{
+    font-size: 12px;
+    font-weight: 500;
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+}

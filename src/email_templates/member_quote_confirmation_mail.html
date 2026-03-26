@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Application Submitted Successfully</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    "
+  >
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center">
+          <table
+            width="500"
+            cellpadding="0"
+            cellspacing="0"
+            style="background: #ffffff; padding: 25px; border-radius: 6px"
+          >
+            <tr>
+              <td
+                style="
+                  font-size: 18px;
+                  font-weight: bold;
+                  padding: 15px;
+                  text-align: center;
+                  background-color: #16a34a;
+                  color: #ffffff;
+                  border-radius: 6px 6px 0 0;
+                "
+              >
+                Application Submitted Successfully
+              </td>
+            </tr>
+
+            <tr>
+              <td style="font-size: 14px; color: #333; line-height: 1.6">
+                <p>Hello <strong>%MEMBER_NAME%</strong>,</p>
+
+                <p>
+                  Your quote/application has been successfully submitted for the
+                  following job/project:
+                </p>
+
+                <p><strong>Job / Project Title:</strong> %JOB_TITLE%</p>
+
+                <p><strong>Client Name:</strong> %CLIENT_NAME%</p>
+
+                <p><strong>Your Membership Type:</strong> %MEMBERSHIP_TYPE%</p>
+
+                <p><strong>Your Quote Description:</strong></p>
+
+                <div
+                  style="
+                    background: #f3f4f6;
+                    padding: 15px;
+                    border-radius: 6px;
+                    color: #444;
+                  "
+                >
+                  %QUOTE_DESCRIPTION%
+                </div>
+
+                <!-- %IF_FILE% -->
+                <!-- <p>
+                  <strong>Your Attached File:</strong><br />
+                  <a
+                    href="%FILE_URL%"
+                    style="color: #2563eb; text-decoration: none"
+                    >View Attachment</a
+                  >
+                </p>
+                %END_IF_FILE% -->
+<!-- 
+                <p>
+                  The client has been notified about your application and may
+                  contact you if they are interested.
+                </p>
+
+                <p>
+                  You can track your submitted quotes using the link below:
+                  <br />
+                  <a href="%DASHBOARD_LINK%" style="color: #2563eb">
+                    View My Applications
+                  </a>
+                </p> -->
+
+                <p>Thank you,<br />%COMPANY_NAME%</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  font-size: 12px;
+                  color: #888;
+                  padding-top: 20px;
+                  text-align: center;
+                "
+              >
+                © %YEAR% %COMPANY_NAME%. All rights reserved.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+.company-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #F7FCFC; */
+  background-color: #93f5eb33;
+  border-radius: 16px;
+  padding: 35px 35px;
+  margin: 20px 50px;
+  transition: all 0.3s ease;
+  font-family: "satoshi";
+  line-height: 1.2rem;
+}
+
+/* .company-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+} */
+
+.card-left {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.company-rating {
+  font-size: 0.9rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.rating-value {
+  font-weight: 500;
+  color: #111;
+}
+
+.company-desc {
+  color: #333;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+}
+
+.company-location {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 14px;
+}
+
+.company-icons {
+  display: flex;
+  gap: 10px;
+  width: 15px;
+  height: 15px;
+  background-color:var(--primary-color);
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white
+}
+
+/* .company-icons img {
+  width: 15px;
+  height: 15px;
+  background-color:var(--primary-color);
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+.company-icons:hover {
+  background-color: #066b4d;
+}
+
+.card-right img {
+  width: 150px;           
+  height: 130px;           
+  background-color: white;
+  padding: 12px;           
+  border-radius: 10px;     
+  object-fit: contain;    
+}
+
+.social-links-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px; 
+}
+
+@media (max-width: 768px) {
+  .company-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-right {
+    margin-top: 16px;
+  }
+}

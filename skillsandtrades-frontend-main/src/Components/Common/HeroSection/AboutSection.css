@@ -1,0 +1,164 @@
+.about-section {
+  position: relative;
+  /* background-color: #d7fffb33; */
+    background-color: #93f5eb33;
+
+  padding: 80px 5%;
+  font-family: "Satoshi", sans-serif;
+  overflow: hidden;
+}
+
+.star-decor {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: clamp(40px, 8vw, 70px);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-image {
+  width: 100%;
+  /* max-width: 500px; */
+  height: auto;
+  aspect-ratio: 1 / 0.98;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-image:hover {
+  transform: scale(1.02);
+}
+
+.floating-card {
+  position: absolute;
+  bottom: -42px;
+  right: 15%;
+  background-color: #134a45;
+  color: #fff;
+  width: 5.5rem;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.floating-card h3 {
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 700;
+  margin: 0;
+}
+
+.floating-card p {
+  font-size: clamp(11px, 1.2vw, 13px);
+  margin: 0;
+  opacity: 0.9;
+}
+
+.dividerr {
+  margin-top: 10px;
+  width: 100%;
+  opacity: 0.5;
+  max-width: 80px;
+  height: 1px;
+  background-color: white;
+  margin-left: 0.4rem;
+  margin-right: auto;
+}
+
+.about-content {
+  flex: 1;
+  color: #333;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-content h2 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 700;
+  color: #0b132b;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.about-content p {
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.learn-btn {
+  margin-top: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 60px 4%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .about-content {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .floating-card {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 20px;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .floating-card {
+    padding: 15px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 15px;
+  }
+
+  /* Make button full width if needed on very small screens, 
+     but keeping it as is since it's a GradientButton component */
+}

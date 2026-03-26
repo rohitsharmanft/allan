@@ -1,6 +1,0 @@
-.container__ {
-  position: sticky;
-  top: 0;
-  z-index: 3000; /* Increased to stay above dropdowns and other elements while scrolling */
-  background-color: #ffffff; /* important to avoid transparency glitches */
-}

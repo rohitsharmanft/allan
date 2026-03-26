@@ -1,0 +1,155 @@
+.member-container {
+  font-family: "satoshi";
+  margin-bottom: 10px;
+  height: auto;
+  margin-top: 40px;
+    background: #fff;
+
+}
+.table-box {
+  background: #fff;
+  padding: 0px 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ant-table {
+  border-radius: 10px !important;
+}
+
+.ant-table-thead > tr > th {
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "satoshi";
+}
+
+.action-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon {
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.icon.view {
+  color: #134A45;
+  background-color: #E7FBF5; 
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.icon.edit {
+  color: #F1A821;
+  background-color: #FFF1D8; 
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.icon.delete {
+  color: #EC4242;
+  background-color: #FFE2E2; 
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  border-radius: 20px;
+  
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+.pagination-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px 1px;
+}
+
+
+.reviews-btn {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.btn-premium {
+  background-color: #134a45;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.btn1 .btn-basic {
+  background: transparent;
+  border: 1px solid #134a45;
+  color: #134a45;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s ease;
+
+}
+.btn1 .btn-free {
+  background: transparent;
+  border: 1px solid #134a45;
+  color: #134a45;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s ease;
+
+}
+.btn-export{
+  background-color: #134a45;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.btn1{
+  display: flex;
+  gap: 10px;
+}
+.btn-accept {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+ padding: 8px 17px;
+  /* margin-right: 5px; */
+  cursor: pointer;
+}
+
+.btn-reject {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.btn-accept:disabled,
+.btn-reject:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

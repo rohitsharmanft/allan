@@ -1,0 +1,286 @@
+.edit-profile_container {
+    background-color: #F7FCFC;
+    border-radius: 16px;
+    padding: 40px 30px;
+    margin: 20px auto;
+    font-family: "Satoshi";
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 95%;
+    max-width: 1100px;
+    height: auto;
+}
+
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.form-grid > div {
+    flex: 1; /* Equal width for both fields */
+}
+
+.upload-input {
+    border-radius: 20px; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+    height: 50px;
+    width: 100%;
+    margin-top: 2px;
+    border-color: #134A45;
+}
+
+.upload-input- {
+    border-color: #134A45;
+    width: 100%;
+}
+
+.upload-input:hover {
+    border-color: #134A45 !important;
+}
+
+.upload-input-:hover {
+    border-color: #134A45 !important;
+}
+
+.upload-btn {
+    border-radius: 20px; 
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    border-color: #134A45 !important;
+    color: white; 
+}
+
+.skill-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.skill-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    font-size: 15px;
+    /* margin-top: 0.7rem; */
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.skill-input:focus {
+    border-color: #134A45;
+    box-shadow: 0 0 0 3px rgba(19, 74, 69, 0.15);
+}
+
+.skill-hint {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.button-group button {
+    min-width: 180px;
+}
+
+.ant-select-single {
+    font-size: 14px;
+    height: 2.5rem;
+    border-radius: 4rem !important;
+    margin-top: 0.5rem;
+}
+
+.ant-select-selector {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    align-items: center;
+    padding: 0 11px;
+}
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid #d9d9d9;
+    background: #ffffff;
+    border-radius: 4rem;
+    height: 45px;
+}
+.ant-select .ant-select-arrow {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    line-height: 1;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 60%;
+    inset-inline-start: auto;
+    inset-inline-end: 11px;
+    height: 12px;
+    /* margin-top: 0px !important; */
+    font-size: 12px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+    border-color: #134A45;
+}
+
+.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):focus .ant-select-selector,
+.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer).ant-select-focused .ant-select-selector {
+    border-color: #134A45;
+}
+
+/* Label styling */
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+    .edit-profile_container {
+        padding: 30px 20px;
+        width: auto;
+        margin: 10px 0;
+        border-radius: 0;
+    }
+
+    /* Stack vertically on tablets and below */
+    .form-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .edit-profile_container {
+        padding: 25px 15px;
+    }
+
+    .edit-profile_container h2 {
+        font-size: 20px;
+        margin-bottom: 15px !important;
+    }
+
+    .form-grid {
+        gap: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .button-group button {
+        width: 100% !important;
+        min-width: unset;
+    }
+
+    .skill-input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .skill-hint {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .edit-profile_container {
+        padding: 20px 12px;
+        margin: 5px;
+        margin-top: 3rem;
+    }
+.ant-select .ant-select-arrow {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    line-height: 1;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 65%;
+    inset-inline-start: auto;
+    inset-inline-end: 11px;
+    height: 12px;
+    /* margin-top: 0px !important; */
+    font-size: 12px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+    .edit-profile_container h2 {
+        font-size: 18px;
+    }
+
+    .form-grid {
+        gap: 18px;
+    }
+
+    .skill-input {
+        font-size: 13px;
+        padding: 14px;
+        border-radius: 24px;
+    }
+
+    .skill-label,
+    label {
+        font-size: 13px;
+    }
+
+    .skill-hint {
+        font-size: 12px;
+    }
+
+    :where(.css-dev-only-do-not-override-11mmrso).ant-select-single {
+        height: 2.2rem;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .edit-profile_container {
+        padding: 15px 10px;
+        margin-top: 3rem;
+    }
+
+    .edit-profile_container h2 {
+        font-size: 16px;
+    }
+
+    .skill-input {
+       font-size: 12px;
+        padding: 11px;
+        border-radius: 20px;
+    }
+}

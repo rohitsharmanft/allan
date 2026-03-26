@@ -1,0 +1,225 @@
+.add-blog-container {
+  margin: auto;
+  padding: 40px 10px;
+  background: #fff;
+  border-radius: 10px;
+  width: 97%;
+  height: auto;
+}
+
+.ant-breadcrumb .ant-breadcrumb-separator {
+  margin-inline: 8px;
+  margin-top: 0.2rem;
+  color: rgba(0, 0, 0, 0.45);
+}
+.heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.image-preview .blog-preview{
+  width: 100% !important;
+}
+.label {
+  display: block;
+  margin: 16px 0 6px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.input-box {
+  height: 40px;
+  border-radius: 40px !important;
+  width: 500px;
+  padding: 2px 15px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 1px solid #d0d5dd;
+}
+
+.textarea-box {
+  border-radius: 10px !important;
+  width: 100%;
+  max-width: 800px;
+}
+
+.textarea-box:hover {
+  border-color: #134a45 !important;
+}
+
+.textarea-box:focus,
+.textarea-box:focus-within,
+.ant-input-textarea:focus,
+.ant-input-textarea:focus-within {
+  border-color: #134a45 !important;
+  box-shadow: none !important;
+}
+
+.upload-area.ant-upload-wrapper .ant-upload.ant-upload-drag {
+  width: auto;
+  height: auto;
+  padding: 10px 0px !important;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.upload-icon {
+  font-size: 40px;
+  color: #5a5a5a;
+}
+
+.upload-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.upload-subtext {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.upload-btn {
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: 1px solid var(--primary-color);
+}
+
+.upload-btn:hover {
+  border: 1px solid var(--primary-color);
+  color: #134a45;
+}
+
+.btn-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-edit {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.upload-area {
+  background-color: #fff;
+}
+
+.tiptap-editor {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.tiptap-editor:focus-within {
+  border-color: #134a45 !important;
+  box-shadow: 0 0 0 3px rgba(19, 74, 69, 0.15);
+}
+
+.editor-menubar {
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.editor-menubar button {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.editor-menubar button:hover {
+  background: #e2e8f0;
+  color: #134a45;
+}
+
+.editor-menubar button.is-active {
+  background: #134a45;
+  color: white;
+}
+
+.editor-content {
+  min-height: 380px;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.editor-content:focus {
+  outline: none;
+}
+
+.editor-content p {
+  margin: 0 0 12px 0;
+}
+
+.editor-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 24px 0 12px 0;
+  color: #134a45;
+}
+
+.editor-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  color: black;
+}
+
+.editor-content ul,
+.editor-content ol {
+  padding-left: 24px;
+  margin: 12px 0;
+}
+
+.editor-content li {
+  margin: 6px 0;
+}
+
+.editor-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tiptap-editor,
+  .upload-area.ant-upload-wrapper .ant-upload.ant-upload-drag {
+    width: 100% !important;
+  }
+}
+@media (max-width: 375px) {
+  .add-blog-container {
+   margin: 3rem 0rem !important;
+        padding: 10px 7px !important;
+        background: #fff !important;
+        border-radius: 10px !important;
+       
+        height: auto !important;
+  }
+}
+

@@ -1,0 +1,238 @@
+.edit-profile_container {
+    background-color: #F7FCFC;
+    border-radius: 16px;
+    padding: 40px 30px;
+    margin: 20px auto;
+    font-family: "Satoshi";
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 95%;
+    max-width: 100% !important;
+    height: auto;
+}
+
+.form-grid_ {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 40px;
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 1rem;
+}
+
+.upload {
+  margin-top: 10px;
+}
+
+.upload-input {
+    border-radius: 12px;
+    transition: all 0.3s;
+    height: 50px;
+    width: 100% !important;
+    border-color: #134a45;
+}
+
+.upload-input- {
+    border-radius: 12px;
+    border-color: #134a45;
+    width: 100% !important;
+}
+
+.upload-input:hover, .upload-input-:hover {
+    border-color: #134a45 !important;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.update-btn, .discard-btn {
+    min-width: 180px;
+}
+
+/* Category Management Styles */
+.bb {
+    padding: 24px 10px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.abc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.table-box {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.table-box .ant-table {
+    min-width: 600px;
+}
+
+/* Delete Modal Styles */
+.delete-modal .delete-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.delete-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.delete-actions .btn-yes,
+.delete-actions .btn-no {
+    min-width: 100px;
+}
+
+
+@media (max-width: 1024px) {
+    .edit-profile_container {
+        padding: 30px 20px;
+        width: auto;
+        margin: 10px 0;
+        border-radius: 0;
+    }
+
+    .bb {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+
+    .update-btn, .discard-btn {
+        width: 100% !important;
+    }
+    
+    .edit-profile_container h2 {
+        font-size: 20px;
+    }
+
+    .abc {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .abc h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .abc .btn-export {
+        width: 100%;
+    }
+
+    .bb {
+        padding: 15px 8px;
+    }
+
+    .table-box {
+        margin-top: 15px;
+    }
+
+    /* Make table more mobile-friendly */
+    .table-box .ant-table {
+        font-size: 13px;
+    }
+
+    .table-box .ant-table-thead > tr > th {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .table-box .ant-table-tbody > tr > td {
+        padding: 10px 8px;
+    }
+
+    .delete-actions {
+        flex-direction: column;
+    }
+
+    .delete-actions .btn-yes,
+    .delete-actions .btn-no {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .edit-profile_container {
+        padding: 20px 15px;
+    }
+
+    .upload-input {
+        height: 45px;
+    }
+
+    .upload-input- {
+        font-size: 14px;
+        padding: 10px !important;
+    }
+
+    .label {
+        font-size: 13px;
+    }
+
+    .bb {
+        padding: 12px 5px;
+    }
+
+    .abc h2 {
+        font-size: 1.1rem !important;
+    }
+
+    .table-box .ant-table {
+        font-size: 12px;
+    }
+
+    .table-box .ant-table-thead > tr > th {
+        padding: 8px 5px;
+        font-size: 11px;
+    }
+
+    .table-box .ant-table-tbody > tr > td {
+        padding: 8px 5px;
+    }
+
+    /* Stack action buttons vertically on very small screens */
+    .table-box .ant-space {
+        flex-direction: column;
+        gap: 5px !important;
+    }
+
+    .delete-modal .delete-text {
+        font-size: 16px;
+    }
+}

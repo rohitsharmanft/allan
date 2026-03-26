@@ -1,0 +1,144 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: "Satoshi", sans-serif;
+}
+
+.login-box {
+  background: #fff;
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  width: 400px;
+    background-color: #ffffff;
+
+  text-align: center;
+}
+.login-header{
+      background-color: #ffffff;
+
+}
+.login-checkbox{
+  font-family: "Satoshi";
+  color: #666666;
+  font-weight: 400;
+  font-size: 12px;
+}
+.login-logo-img {
+  width: 200px; 
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+    background-color: #ffffff;
+
+}
+.login-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 25px;
+      background-color: #ffffff;
+
+}
+
+.login-form{
+        background-color: #ffffff;
+
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+      background-color: #ffffff;
+
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+      background-color: #ffffff;
+
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 25px 0;
+      background-color: white;
+
+}
+
+.form{
+    background-color: white;
+
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+}
+
+.forgot-link {
+  font-size: 0.9rem;
+  color: #134A45;
+  font-family: "Satoshi";
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.custom-input{
+  padding: 10px 10px;
+  border-radius: 30px;
+  background-color: white;
+}
+.custom-password{
+    padding: 10px 10px;
+  border-radius: 30px;
+
+}
+
+
+.btn-login {
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.signup-text {
+  font-size: 14px;
+  margin-top: 25px;
+  color: #333;
+}
+
+.signup-text a {
+  color: #134A45;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+
+:where(.ant-form-item-label) label {
+  color: #333 !important;
+  font-weight: 600 !important;
+  background: #ffffff !important;
+}
+:where(.css-dev-only-do-not-override-11mmrso).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+  background-color: #134A45;
+}
+span.ant-checkbox-label {
+    font-size: 1rem;
+}

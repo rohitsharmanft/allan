@@ -1,0 +1,296 @@
+import React, { useState, useContext, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Input, Button, Upload, message, Select, Breadcrumb } from "antd";
+import { InboxOutlined } from "@ant-design/icons";
+import axios from "axios";
+import "./AddBlog.css";
+
+import DashboardHeader from "../../components/DashboardHeader/DashboardHeader";
+import Sidebar from "../../components/SideBar/Sidebar";
+import GradientButton from "../../common/GradientButton/GradientButton";
+import InputField from "../../common/InputField/InputField";
+import { admin_get_all_category, admin_update_blog } from "../../api";
+import { AuthContext } from "../../contexts/AuthContext";
+import Tiptap from "../../components/Editor";
+import { toast } from "react-toastify";
+import { FiChevronRight } from "react-icons/fi";
+
+const EditBlog = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { token } = useContext(AuthContext);
+
+  const data = location.state;
+
+  const [id] = useState(data?.id || "");
+  const [title, setTitle] = useState(data?.title || "");
+  const [body, setBody] = useState(data?.content || "");
+  const [category, setCategory] = useState(data?.categoryId || "");
+  const [categoryTitle, setCatgoryTitle] = useState(data?.tag || "");
+  const [image, setImage] = useState(null);
+  const [imagePreview, setImagePreview] = useState(
+    data?.image ? `${data.image}` : null
+  );
+  const [loading, setLoading] = useState(false);
+  const [categories, setCategories] = useState([]);
+
+  const [errors, setErrors] = useState({
+    title: "",
+    body: "",
+    category: "",
+    image: "",
+  });
+
+  const fetchCategories = async () => {
+    try {
+      const res = await axios.get(admin_get_all_category, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      if (res.data.status && res.data.code === 200) {
+        setCategories(res.data.data);
+      } else {
+        message.error(res.data.message || "Failed to fetch categories");
+      }
+    } catch (err) {
+      console.error(err);
+      message.error("Failed to fetch categories");
+    }
+  };
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
+
+  const categoryOptions = categories.map((cat) => ({
+    label: cat.title,
+    value: cat._id,
+  }));
+
+  useEffect(() => {
+    if (!data || !data.id) {
+      message.error("No blog selected for editing");
+      navigate("/blog");
+    }
+  }, [data, navigate]);
+
+  const clearError = (field) => {
+    setErrors((prev) => ({ ...prev, [field]: "" }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {
+      title: "",
+      body: "",
+      category: "",
+      image: "",
+    };
+    let isValid = true;
+
+    const trimmedTitle = title.trim();
+    if (!trimmedTitle) {
+      newErrors.title = "Title is required";
+      isValid = false;
+    } else if (trimmedTitle === "") {
+      newErrors.title = "Only spaces are not allowed";
+      isValid = false;
+    } else if (trimmedTitle.length < 3) {
+      newErrors.title = "Title is too short (min 3 characters)";
+      isValid = false;
+    }
+
+    const strippedBody = body.replace(/<[^>]+>/g, "").trim();
+    if (!strippedBody) {
+      newErrors.body = "Blog content is required";
+      isValid = false;
+    } else if (strippedBody === "") {
+      newErrors.body = "Only spaces are not allowed";
+      isValid = false;
+    } else if (strippedBody.length < 10) {
+      newErrors.body = "Content is too short (min 10 characters)";
+      isValid = false;
+    }
+
+    if (!category) {
+      newErrors.category = "Please select a category";
+      isValid = false;
+    }
+
+    if (!image && !imagePreview) {
+      newErrors.image = "Please upload an image";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const beforeUpload = (file) => {
+    const isAllowed =
+      file.type === "image/jpeg" ||
+      file.type === "image/jpg" ||
+      file.type === "image/png" ||
+      file.type === "image/svg+xml";
+
+    if (!isAllowed) {
+      toast.error("You can only upload JPG, JPEG, PNG or SVG files!");
+      return Upload.LIST_IGNORE;
+    }
+
+    setImage(file);
+    setImagePreview(URL.createObjectURL(file));
+    clearError("image");
+    return false;
+  };
+
+  const handleSubmit = async () => {
+    if (!validateForm()) {
+      message.warning("Please fill all required fields correctly");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const formData = new FormData();
+      formData.append("id", id);
+      formData.append("heading", title.trim());
+      formData.append("description", body);
+      formData.append("categoryId", category);
+      if (image) {
+        formData.append("image", image);
+      }
+
+      const response = await axios.put(admin_update_blog, formData, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      if (response.data.code === 200) {
+        toast.success("Blog updated successfully!");
+        navigate("/blog");
+      } else {
+        toast.error(response.data.error || "Update failed");
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error(err.response?.data?.message || "Server error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <>
+      <DashboardHeader />
+      <div className="dashboard-main">
+        <div className="dashboard-left">
+          <Sidebar />
+        </div>
+
+        <div className="dashboard-right">
+          <div className="add-blog-container">
+            <div className="blog-bread">
+              <div className="bread-crumb_">
+                <Breadcrumb
+                  separator={<FiChevronRight size={14} className="ss" />}
+                  items={[
+                    { title: <Link to="/blog">Blog</Link> },
+                    { title: "Edit Blog" },
+                  ]}
+                />
+              </div>
+            </div>
+
+            <h2 className="heading">Edit Blog Details</h2>
+
+            <label className="label">Title</label>
+            <InputField
+              placeholder="Enter blog title"
+              className={`input ${errors.title ? "error-input" : ""}`}
+              value={title}
+              onChange={(e) => {
+                setTitle(e.target.value);
+                clearError("title");
+              }}
+            />
+            {errors.title && <div className="error-text">{errors.title}</div>}
+
+            <label className="label">Blog Content</label>
+            <div className={`editor-wrapper ${errors.body ? "error-border" : ""}`}>
+              <Tiptap
+                content={body}
+                onChange={(value) => {
+                  setBody(value);
+                  clearError("body");
+                }}
+              />
+            </div>
+            {errors.body && <div className="error-text">{errors.body}</div>}
+
+            <label className="label">Category</label>
+            <Select
+              showSearch
+              placeholder="Select Category"
+              className={`input ${errors.category ? "error-input" : ""}`}
+              value={categoryTitle}
+              onChange={(value) => {
+                setCategory(value);
+                setCatgoryTitle(value);
+                clearError("category");
+              }}
+              options={categoryOptions}
+              optionFilterProp="label"
+            />
+            {errors.category && <div className="error-text">{errors.category}</div>}
+
+            <label className="label">Blog Image</label>
+            <Upload.Dragger
+              name="image"
+              multiple={false}
+              className={`upload-area ${errors.image ? "error-border" : ""}`}
+              showUploadList={false}
+              beforeUpload={beforeUpload}
+              maxCount={1}
+            >
+              {imagePreview ? (
+                <div className="image-preview">
+                  <img src={imagePreview} alt="Blog preview" className="blog-preview" />
+                  <p className="upload-text">Click or drag to replace image</p>
+                </div>
+              ) : (
+                <>
+                  <p className="upload-icon">
+                    <InboxOutlined />
+                  </p>
+                  <p className="upload-text">Choose a file or drag & drop it here</p>
+                  <p className="upload-subtext">JPG, JPEG, PNG, SVG only</p>
+                  <Button className="upload-btn">UPLOAD IMAGE</Button>
+                </>
+              )}
+            </Upload.Dragger>
+            {errors.image && <div className="error-text">{errors.image}</div>}
+
+            <div className="btn-row">
+              <GradientButton
+                text={loading ? "Saving..." : "Save Changes"}
+                className="btn-edit"
+                onClick={handleSubmit}
+                disabled={loading}
+              />
+              <GradientButton
+                text="Discard"
+                className="btn-discard"
+                onClick={() => navigate("/blog")}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default EditBlog;

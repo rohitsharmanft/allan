@@ -1,0 +1,234 @@
+.profile-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto;
+    font-family: "Satoshi";
+    padding: 0 20px; /* left/right spacing for safety */
+  }
+  
+  .btn-profile{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .profile-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  
+  /* Outer Card */
+  .profile-wrapper {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    padding: 20px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 90%;
+  }
+  
+  /* Inner light box */
+  .profile_card {
+    background: #f3fbf8;
+    border-radius: 14px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 40px 20px;
+  }
+  
+  /* Profile Info Left Side */
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .profile-info img{
+    object-fit: cover;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .details h3 {
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .details p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.2rem;
+    margin: 2px 0;
+  }
+  .admin-profile-change-requests{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    margin-top: 20px;
+  }
+  :where(.css-dev-only-do-not-override-11mmrso) a {
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-text-decoration-skip: objects;
+}
+  .job-title {
+    font-size: 10px;
+    font-weight: 500;
+    color: #555;
+    margin: 2px 0;
+  }
+  
+  .email,
+  .mobile {
+    font-size: 12px;
+    color: #333;
+    margin: 2px 0;
+  }
+  
+  /* Password row below */
+  .password-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 4px 4px;
+    margin: 5px 5px;
+  }
+  
+  .change-label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* Buttons */
+  .edit-btn,
+  .change-password-btn {
+    border-radius: 50px !important;
+    padding: 10px 22px !important;
+
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .profile-card {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .profile-info {
+      /* flex-direction: column; */
+    }
+  
+   .password-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start !important;
+    padding: 18px 4px 4px;
+    margin: 5px 5px;
+}
+    .profile-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 6px auto;
+    font-family: "Satoshi";
+    padding: 0 0px;
+}
+  }
+  @media (max-width:535px) {
+.profile_card {
+    background: #f3fbf8;
+    border-radius: 14px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: auto;
+    gap: 1rem;
+    padding: 40px 20px;
+}
+.edit-btn {
+    background-color: #e7f3ee;
+    color: white;
+    /* padding: 8px 25px; */
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    font-weight: 500;
+    width: 100%;
+}
+  }
+
+  @media (max-width:425px) {
+    .edit-profile-container {
+    background-color: #F7FCFC;
+    border-radius: 16px;
+    padding: 45px 9px !important;
+    margin: 2px 0px !important;
+    font-family: "Satoshi";
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: auto !important;
+    height: auto;
+}
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-direction: column;
+}
+.button-group .update-btn {
+    background-color: #134a45;
+    color: white;
+    border: none;
+    padding: 11px 5px !important;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+    .profile_card {
+    background: #f3fbf8;
+    border-radius: 14px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px 20px;
+}
+.password-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: start !important;
+        padding: 18px 4px 4px;
+        margin: 5px 2px;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .password-section p{
+      margin-left: 0.5rem;
+    }
+.edit-btn {
+    background-color: #e7f3ee;
+    color: white;
+    /* padding: 8px 25px; */
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    width: 100%;
+    font-weight: 500;
+}
+  }

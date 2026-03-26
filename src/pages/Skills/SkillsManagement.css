@@ -1,0 +1,117 @@
+/* Skills Management Container */
+.sk {
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+    width: 95%;
+    /* max-width: 1200px; */
+    font-family: "Satoshi", sans-serif;
+}
+
+/* Header Section */
+.sk1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sk1 h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Table Container */
+.table-box {
+    width: 100%;
+    overflow-x: auto; /* Horizontal scroll for small screens */
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Ant Design Table Customization */
+.table-box .ant-table-wrapper {
+    background: #fff;
+}
+
+.table-box .ant-table-thead > tr > th {
+    background: #f0fdfc;
+    color: #134A45;
+    font-weight: 600;
+}
+
+.table-box .ant-table-tbody > tr > td {
+    padding: 16px;
+}
+
+/* Nested Table Styling */
+.ant-table-expanded-row > td {
+    background-color: #f9f9f9 !important;
+    padding: 16px !important;
+}
+
+.ant-table-expanded-row .ant-table {
+    margin: 0 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sk {
+        padding: 16px;
+        margin: 15px auto;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .sk1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .sk1 h2 {
+        font-size: 20px;
+    }
+
+    .sk1 button {
+        width: 100%; /* Full width button on mobile */
+    }
+
+    /* Adjust table filtering/pagination if needed */
+    .table-box .ant-table {
+        font-size: 14px;
+    }
+    
+    /* Make action buttons easier to tap */
+    .ant-btn-sm {
+        height: 32px;
+        padding: 4px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sk {
+        padding: 12px;
+    }
+
+    .sk1 h2 {
+        font-size: 18px;
+    }
+
+    .table-box .ant-table-thead > tr > th,
+    .table-box .ant-table-tbody > tr > td {
+        padding: 12px 8px; /* Reduced padding */
+    }
+
+    /* Ensure expanding icon has space */
+    .ant-table-row-expand-icon-cell {
+        width: 40px !important;
+        min-width: 40px !important;
+    }
+}

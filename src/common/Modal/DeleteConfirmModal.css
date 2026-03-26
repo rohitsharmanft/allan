@@ -1,0 +1,80 @@
+.delete-modal .ant-modal-content {
+  border-radius: 16px;
+  padding: 40px 40px;
+  text-align: center;
+  font-family: "Satoshi";
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+
+}
+
+.delete-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 35px;
+}
+
+.delete-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-no {
+  padding: 8px 30px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.delete-actions .btn-yes {
+  font-weight: 500;
+}
+
+.btn-yes:hover {
+  background-color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .delete-modal .ant-modal-content {
+    padding: 30px 20px;
+    width: 90% !important;
+  }
+
+  .delete-text {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .delete-actions {
+    gap: 15px;
+  }
+
+  .btn-no,
+  .delete-actions .btn-yes {
+    padding: 8px 20px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .delete-actions {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-no,
+  .delete-actions .btn-yes {
+    width: 100%;
+    max-width: 220px;
+  }
+}

@@ -1,0 +1,50 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+}
+
+.input-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+  width: 280px;
+  height: 5px;
+  font-family: "Satoshi";
+  display: flex;
+}
+
+.error-message {
+  color: red;
+  font-size: 15px;
+  display: block;
+  text-align: left;
+}
+.input-box {
+  height: 40px;
+  border-radius: 10px !important;
+  border-radius: 50px !important;
+  font-size: 12px;
+  outline: none;
+  transition: border 0.2s ease;
+  width: 100%;
+}
+
+.input-box:focus {
+  border-color: #1b8177;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(27, 129, 119, 0.1);
+}
+
+.input-box:hover,
+.input-box.active {
+  border-color: #1b8177;
+  box-shadow: 0 0 0 2px rgba(27, 129, 119, 0.1);
+}
+
+.input-box:disabled {
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+}

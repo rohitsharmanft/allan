@@ -1,0 +1,255 @@
+.comparison-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.old-value {
+    color: #666;
+    opacity: 0.85;
+}
+
+.strikethrough {
+    color: #888;
+    text-decoration: line-through;
+    text-decoration-color: #ff4d4f;
+    text-decoration-thickness: 1.5px;
+}
+
+.new-value {
+    color: #1a7e2e;
+    font-weight: 500;
+    background: rgba(26, 126, 46, 0.08);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #52c41a;
+}
+
+.comparison-unchanged {
+    color: #333;
+    font-size: 13px;
+}
+
+.empty-value {
+    color: #aaa;
+    font-style: italic;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.skill-tag {
+    font-size: 12px !important;
+    padding: 2px 8px !important;
+}
+
+.social-links-modern {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-top: 4px;
+}
+
+.social-link {
+    color: #1890ff;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.social-link:hover {
+    color: #40a9ff;
+    text-decoration: underline;
+}
+
+.new-link {
+    color: #1a7e2e !important;
+    font-weight: 500;
+}
+
+.new-link:hover {
+    color: #389e0d !important;
+}
+
+/* Make sure long text wraps nicely */
+.ant-table-cell {
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+}
+
+.comparison-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.comparison-unchanged {
+    color: #333;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.changed .old-value {
+    color: #777;
+    opacity: 0.9;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    text-decoration-color: #ff4d4f88;
+    text-decoration-thickness: 1.5px;
+}
+
+.new-value {
+    color: #1a7e2e;
+    font-weight: 500;
+    background: rgba(26, 126, 46, 0.08);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #52c41a;
+    line-height: 1.5;
+}
+
+.empty-value {
+    color: #aaa;
+    font-style: italic;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 2px 0;
+}
+
+.social-links-modern {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-top: 2px;
+}
+
+.social-link {
+    color: #1890ff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.new-link {
+    color: #1a7e2e !important;
+    font-weight: 500;
+}
+.admin-profile-requests-container {
+    margin-top: 20px;
+}
+
+.profile-requests-header {
+    margin-bottom: 20px;
+}
+
+.profile-requests-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    font-family: "Satoshi";
+}
+
+.table-box-white {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.social-links-modern {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-top: 2px;
+}
+
+.social-link {
+    color: #1890ff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.new-link {
+    color: #1a7e2e !important;
+    font-weight: 500;
+}
+
+.comparison-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.comparison-unchanged {
+    color: #333;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.changed .old-value {
+    color: #777;
+    opacity: 0.9;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    text-decoration-color: #ff4d4f88;
+    text-decoration-thickness: 1.5px;
+}
+
+.new-value {
+    color: #1a7e2e;
+    font-weight: 500;
+    background: rgba(26, 126, 46, 0.08);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #52c41a;
+    line-height: 1.5;
+}
+
+.empty-value {
+    color: #aaa;
+    font-style: italic;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 2px 0;
+}
+
+.skill-tag {
+    font-size: 12px !important;
+    padding: 2px 8px !important;
+}
+
+.ant-table-thead>tr>th {
+    background: #f8f9fa !important;
+    font-weight: 600 !important;
+}
+
+.ant-table-row:hover {
+    background-color: #fafafa !important;
+}

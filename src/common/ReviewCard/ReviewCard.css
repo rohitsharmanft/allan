@@ -1,0 +1,38 @@
+.review-card {
+  border: 1px solid #cde4e2;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  font-family: "Satoshi";
+  transition: all 0.3s ease;
+  margin-top: 1px;
+  background-color: white !important;
+  min-height: 160px;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.review-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+.review-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.review_detail {
+  margin: 5px 0;
+  color: #333;
+  font-size: 14px !important;
+  line-height: 1rem !important;
+  margin-top: 15px !important;
+}
+
+.review_detail p{
+  color: black !important;
+}

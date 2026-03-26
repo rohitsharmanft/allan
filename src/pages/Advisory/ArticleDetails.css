@@ -1,0 +1,82 @@
+
+.article-detail-page{
+    font-family: "satoshi";
+    background-color: #fff;
+    
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 20px 15px;
+  font-size: 12px;
+  color: #666;
+}
+.a{
+  margin-left: 1rem;
+}
+.article-content{
+  padding: 20px;
+}
+.breadcrumb span {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.article-content {
+  max-width: 100%;
+  margin: 1px 10px;
+}
+
+.article-detail-page h3{
+  font-size: 16px;
+  font-weight: 600;
+  /* margin: 20px 22px; */
+}
+
+.article-content .main-image {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.article-content h2,
+.article-content h3 {
+  color: #0a0a0a;
+  margin-top: 8px;
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+
+
+.content-text{
+    line-height: 1.8;
+    color: #333;
+      font-size: 1rem;
+
+}
+
+.content-text li{
+    margin-left: 40px;
+          font-size: 0.8rem;
+
+}
+
+.related-section {
+  margin: 10px 0;
+  margin-bottom: 50px;
+}
+
+.related-section h2 {
+  margin-bottom: 30px;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+.related-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

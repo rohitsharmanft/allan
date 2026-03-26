@@ -1,0 +1,88 @@
+.article-hero {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: "satoshi";
+}
+
+.article-detail-page {
+  font-family: "satoshi";
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 30px auto;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb span {
+  color: #134a45;
+  font-weight: 700;
+  font-family: "Satoshi";
+}
+.article-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
+
+.article-content .main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.article-content h2,
+.article-content h3 {
+  color: #0a0a0a;
+  margin-top: 8px;
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+
+.content-text {
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+.content-text li {
+  margin-left: 40px;
+  font-size: 0.8rem;
+}
+
+.related-section {
+  margin: 10px 0;
+  margin-bottom: 50px;
+}
+
+.related-section h2 {
+  margin-bottom: 30px;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+.related-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

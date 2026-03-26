@@ -1,0 +1,79 @@
+.modern-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: auto; 
+}
+
+.modern-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.modern-card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.modern-card-content {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.modern-card-tag {
+  background: #e6f4ea;
+  color: #137333;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  align-self: flex-start;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.modern-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 10px;
+  line-height: 1.4;
+  margin-left: 10px;
+}
+
+.modern-card-description {
+  font-size: 12px;
+  color: #5f6368;
+  margin-top: 6px;
+  line-height: 1.6;
+  flex-grow: 1;
+    margin-left: 10px;
+
+}
+
+.modern-card-link {
+  color: #134A45;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  transition: 0.2s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.modern-card-link:hover {
+  text-decoration: underline;
+}

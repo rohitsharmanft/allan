@@ -1,0 +1,66 @@
+.review-hero {
+  position: relative;
+  background: url("../../../assets/images/job1.png") center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Satoshi", sans-serif;
+}
+
+.review-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.review-hero h1 {
+  position: relative;
+  color: #fff;
+  font-size: 36px;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.review-section {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Satoshi", sans-serif;
+}
+
+.review-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.review-subtext {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.review-grid {
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 5px;
+  
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

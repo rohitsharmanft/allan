@@ -1,0 +1,24 @@
+.member {
+  text-align: center;
+  font-family: "satoshi";
+  font-size: 1.8rem;
+  margin-top: 40px;
+}
+.member-resource {
+  padding: 0px 0px;
+  background-color: #fafafa;
+}
+
+.member-resource-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pricing-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}

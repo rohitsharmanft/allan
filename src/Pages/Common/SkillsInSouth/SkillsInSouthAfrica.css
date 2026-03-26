@@ -1,0 +1,226 @@
+.skills-page {
+  font-family: "satoshi";
+  background-color: #fff;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 300px;
+  background:
+    url("../../../assets/images/grid.png") top left no-repeat,
+    url("../../../assets/images/hero-bg.jpg") center/cover no-repeat;
+  background-size:
+    600px auto,
+    cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-section h1 {
+  position: relative;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #555 !important;
+  margin: 20px auto;
+}
+
+.breadcrumb .active {
+  color: #066b4d;
+  font-weight: 500;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: black;
+  margin: 20px 0 40px;
+  margin-top: 80px;
+}
+
+.card-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    width: 90%;
+  }
+  .hero-section {
+    min-height: 250px;
+  }
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin: 20px 10px;
+    overflow-x: auto;
+  }
+
+  .card-container {
+    width: 95%;
+  }
+
+  .hero-section {
+    min-height: 200px;
+    background-size:
+      400px auto,
+      cover;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Override CompanyCard layout for mobile */
+  .card-container .company-card {
+    margin: 15px 0;
+    padding: 20px;
+     display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+  }
+
+  .pagination-container {
+    margin: 30px 0;
+  }
+
+  .ant-pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .card-container .company-card {
+   padding: 15px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    
+  }
+
+  /* Compact pagination for small screens */
+  .ant-pagination-item {
+    min-width: 28px !important;
+    height: 28px !important;
+    font-size: 12px;
+    margin-right: 4px !important;
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next,
+  .ant-pagination-jump-prev,
+  .ant-pagination-jump-next {
+    min-width: 28px !important;
+    height: 28px !important;
+  }
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 60px 0;
+}
+
+.ant-pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ant-pagination-item {
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 6px !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #134e4a !important;
+  background-color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+.ant-pagination-item:hover {
+  border-color: #134e4a !important;
+  color: #134e4a !important;
+}
+
+.ant-pagination-item-active {
+  background-color: #134e4a !important;
+  border-color: #134e4a !important;
+}
+
+.ant-pagination-item-active a {
+  color: #fff !important;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 6px !important;
+  background-color: #fff !important;
+  color: #134e4a !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease;
+}
+
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover,
+.ant-pagination-jump-prev:hover,
+.ant-pagination-jump-next:hover {
+  border-color: #134e4a !important;
+  color: #134e4a !important;
+}
+
+.result-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #666;
+  font-family: "Inter", sans-serif;
+}

@@ -1,0 +1,116 @@
+.freelance {
+  margin-top: 40px;
+  font-family: "Satoshi", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.signup_btn .left-arrow {
+  margin-right: 10px;
+}
+
+.signup_btn .arrow {
+  font-size: 16px;
+}
+.sme-section {
+  /* background-color: #93f5eb33 !important;
+  width: 100%; */
+  position: relative;
+    /* background-color: #d7fffb33; */
+    background-color: #93f5eb33;
+    padding: 80px 4%;
+    font-family: "Satoshi", sans-serif;
+    overflow: hidden;
+}
+.sme{
+  background-color: #f5fffe33 !important;
+}
+.sme-container {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto; */
+  /* flex-direction: row-reverse; mimicking the 'reverse' prop */
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sme-content {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sme-content h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 700;
+  color: #0b132b;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.sme_image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sme_image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 1 / 0.98;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.sme-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Tablet and Mobile adjustments for the container */
+@media (max-width: 992px) {
+  .freelance {
+    margin-top: 20px;
+  }
+  .sme-container {
+    flex-direction: column-reverse !important;
+    text-align: center;
+    padding: 40px 0px;
+    gap: 40px;
+  }
+  .sme-content {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .sme-image img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .freelance {
+    margin-top: 10px;
+  }
+  .sme-container {
+    padding: 30px 0px;
+  }
+  .sme-image img {
+    max-width: 100%;
+  }
+}

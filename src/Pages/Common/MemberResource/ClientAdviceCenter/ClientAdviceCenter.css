@@ -1,0 +1,138 @@
+.client-advice-page {
+  font-family: "satoshi";
+}
+
+.hero-section {
+  position: relative;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.articles-section {
+  padding: 60px 50px;
+}
+
+.articles-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #111;
+}
+
+.articles-layout {
+  display: flex;
+  gap: 15px;
+}
+
+.left-sidebar {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.category_btn {
+  background: #f4f6f6;
+  padding: 16px 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #184f43;
+  border: 1px solid transparent;
+    background-image: url("../../../../assets/images/img1.png"); 
+
+}
+
+.category_btn:hover {
+  background: #e3f3ee;
+  border: 1px solid #046b4f;
+}
+
+.right-content {
+ /* min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  height: 100%;
+  margin-left: 15px; */
+  display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.article-card {
+  height: auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+@media (max-width:1440) {
+  .pricing-card {
+    display: flex;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    margin: 40px 82px;
+    transition: 0.3s ease;
+}
+  /* .right-content {
+    grid-template-columns: repeat(3, 1fr) !important;
+  } */
+}
+
+@media (max-width: 1024px) {
+  .pricing-card {
+    display: flex;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    margin: 40px 10px;
+    transition: 0.3s ease;
+}
+  .right-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .articles-layout {
+    flex-direction: column;
+  }
+
+  .left-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .articles-section {
+    padding: 60px 10px !important;
+}
+
+  /* .right-content {
+    grid-template-columns: 1fr;
+  } */
+}

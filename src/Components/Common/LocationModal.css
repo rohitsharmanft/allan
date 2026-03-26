@@ -1,0 +1,279 @@
+.location-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  font-family: "satoshi";
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+}
+.modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-btn {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+  color: #0a5c4f;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.modal-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #666666;
+  margin-top: 1rem;
+  font-family: "satoshi";
+  margin-bottom: 25px;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 2px;
+  border: 1px solid #e5e7eb;
+  position: relative;
+  margin: 2rem 4rem;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: #333;
+  text-align: left;
+}
+
+.geo-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #0a5c4f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aarrow {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.search-btn {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-family: "satoshi";
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-box {
+    padding: 25px 20px;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-box {
+    padding: 20px 15px;
+    width: 95%;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    padding: 0;
+    gap: 12px;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .search-input {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    width: 86%;
+    padding: 12px 45px 12px 20px;
+    height: 34px;
+    flex: none;
+  }
+
+  .geo-btn {
+    position: absolute;
+    right:94px;
+    top: 17px;
+    z-index: 2;
+  }
+
+  .search-btn {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    height: 48px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 561px) {
+      .geo-btn {
+        position: absolute;
+        right: 84px;
+        top: 17px;
+        z-index: 2;
+    }
+}
+@media (max-width: 535px) {
+      .geo-btn {
+        position: absolute;
+        right: 72px;
+        top: 17px;
+        z-index: 2;
+    }
+}
+@media (max-width:495px) {
+      .geo-btn {
+        position: absolute;
+        right: 52px;
+        top: 17px;
+        z-index: 2;
+    }
+
+}
+@media (max-width:462px) {
+      .geo-btn {
+        position: absolute;
+        right: 35px;
+        top: 17px;
+        z-index: 2;
+    }
+}  
+@media (max-width:425px) {
+      .geo-btn {
+        position: absolute;
+        right: 14px;
+        top: 17px;
+        z-index: 2;
+    }
+}  
+@media (max-width:409px) {
+      .geo-btn {
+        position: absolute;
+        right: 11px;
+        top: 17px;
+        z-index: 2;
+    }
+}  
+@media (max-width:375px) {
+      .geo-btn {
+        position: absolute;
+        right: -5px;
+        top: 17px;
+        z-index: 2;
+    }
+}  
+@media (max-width:332px) {
+      .geo-btn {
+        position: absolute;
+        right: -25px;
+        top: 17px;
+        z-index: 2;
+    }
+}  
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.geo-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.search-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

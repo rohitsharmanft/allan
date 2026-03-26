@@ -1,0 +1,263 @@
+.admin-page {
+  font-family: "Satoshi";
+  color: #333;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 300px;
+  background:
+    url("../../../assets/images/grid.png") top left no-repeat,
+    url("../../../assets/images/hero-bg.jpg") center/cover no-repeat;
+  background-size:
+    600px auto,
+    cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-section h1 {
+  position: relative;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 25px auto;
+  font-size: 1rem;
+  color: #666;
+  font-family: "Satoshi";
+}
+.ant-breadcrumb .ant-breadcrumb-item a {
+  color: var(--ant-breadcrumb-link-color);
+  transition: color var(--ant-motion-duration-mid);
+  padding: 0 var(--ant-padding-xxs);
+  border-radius: var(--ant-border-radius-sm);
+  height: var(--ant-font-height);
+  display: inline-block;
+  margin-inline: calc(var(--ant-margin-xxs) * -1);
+  font-family: "Satoshi";
+  font-weight: 400;
+  color: #666666;
+}
+.breadcrumb span {
+  color: #111;
+  font-weight: 600;
+}
+.ss {
+  margin-top: 0.3rem;
+  color: #134A45;
+}
+.admin-container {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  text-align: center;
+  
+  font-family: "Satoshi";
+}
+
+.admin-container h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-family: "Satoshi";
+  color: #111827;
+}
+
+.alphabet-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.alphabet-filter button {
+  background-color: transparent;
+  border: none;
+  color: #184d47 !important;
+  font-weight: 700;
+  font-size: 16px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.alphabet-filter button:hover {
+  background-color: #184d47;
+  color: #fff !important;
+}
+.alphabet-filter button.selected {
+  background-color: #B3E1DD !important;
+  color: #134A45 !important;
+}
+
+.skills-list {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  border: 1px solid #E5E7EB;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0px 12rem;
+}
+.ant-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0rem;
+  padding: 0 8px;
+  list-style: none;
+}
+.skill-card {
+  background-color: #b4e1dd;
+  border-radius: 8px;
+  padding: 20px 40px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 15px;
+  color: #134a45;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  background-color: #b6e1db;
+  transform: translateY(-2px);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Large Desktop / Tablet */
+@media (max-width: 1024px) {
+  .admin-container {
+    padding: 0 20px;
+    max-width: 95%;
+  }
+
+  .ant-breadcrumb ol {
+    margin: 0 1rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 220px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .admin-container {
+    margin-bottom: 60px;
+  }
+
+  .skills-list {
+    margin: 0 20px;
+    padding: 30px;
+  }
+
+  .alphabet-filter {
+    margin-bottom: 30px;
+  }
+}
+
+/* Small Tablet & Mobile */
+@media (max-width: 768px) {
+  .ant-breadcrumb ol {
+    margin: 0 1rem;
+  }
+
+  .hero-section {
+    min-height: 180px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .admin-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .alphabet-filter {
+    gap: 4px;
+    padding: 0 10px;
+  }
+
+  .alphabet-filter button {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .skills-list {
+    margin: 0 10px;
+    padding: 20px;
+  }
+
+  .skill-card {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-section {
+    min-height: 160px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .admin-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .alphabet-filter button {
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  .skills-list {
+    padding: 15px;
+    margin: 0 5px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 420px) {
+  .alphabet-filter button {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.4rem;
+  }
+}

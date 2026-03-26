@@ -1,0 +1,241 @@
+.edit-profile-container- {
+  background-color: #f7fcfc;
+  border-radius: 16px;
+  padding: 45px 10px;
+  margin: 0px auto;
+  font-family: "Satoshi";
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 98%;
+  max-width: 100% !important;
+  height: auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.bread-crumb_ {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+  align-items: flex-start;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.bread-crumb_ span {
+  color: #134a45;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.edit-text {
+  color: #1b8177;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+  border: 1px solid #f7fcfc;
+}
+
+.button_group {
+  display: flex;
+  gap: 16px;
+}
+
+.profile-img-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  border-color: #1b8177;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border-color: #1b8177;
+}
+
+.camera-badge {
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  background: #134a45;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  backdrop-filter: blur(3px);
+}
+.field-error{
+  color: #ff0000;
+  font-size: 15px;
+}
+.button_group .update-btn {
+  background-color: #134a45;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.update-btn:hover {
+  background-color: #1b8177;
+}
+
+.button_group .discard-btn {
+  background: transparent;
+  border: 1px solid #134a45;
+  color: #134a45;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.discard-btn:hover {
+  background-color: #134a45;
+  color: white;
+}
+
+@media (max-width: 902px) {
+  .form_grid {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    border: 1px solid #f7fcfc;
+  }
+}
+
+@media (max-width: 768px) {
+  .edit-profile-container {
+    padding: 30px 15px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .form_grid {
+    margin-right: 0;
+    row-gap: 20px;
+  }
+
+  .button_group {
+    flex-wrap: wrap;
+  }
+
+  .button_group .update-btn,
+  .button_group .discard-btn {
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .edit-profile-container {
+    padding: 20px 12px;
+    border-radius: 12px;
+  }
+
+  .profile-img-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .camera-badge {
+    width: 26px;
+    height: 26px;
+    right: -5px;
+  }
+
+  .form_grid {
+    row-gap: 16px;
+  }
+
+  .button_group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .button_group .update-btn,
+  .button_group .discard-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  .bread-crumb_ {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-profile-container {
+    padding: 15px 10px;
+    margin-top: 5rem;
+  }
+.edit-profile-container- {
+    background-color: #f7fcfc;
+    border-radius: 16px;
+    padding: 43px 9px;
+    margin: 1px;
+    font-family: "Satoshi";
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* width: 93%; */
+    width: 94% !important;
+    height: auto;
+}
+  .profile-img-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 25px;
+  }
+
+  .camera-badge {
+    width: 24px;
+    height: 24px;
+  }
+
+  .button_group .update-btn,
+  .button_group .discard-btn {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+}

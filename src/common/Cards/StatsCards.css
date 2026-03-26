@@ -1,0 +1,141 @@
+:root{
+  --card:#ffffff;
+}
+
+.stat-card {
+   position: relative;
+  width: 220px;
+  height: 80px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-family: "Satoshi";
+  transition: transform 0.3s ease;
+  background-size: cover;       
+  background-position: center; 
+  background-repeat: no-repeat;   
+  padding: 16px ;
+  margin-left: 2px;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 11px;
+  font-weight: 500;
+    background: transparent; 
+  color: black;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start;
+  margin-bottom: 10px;
+  letter-spacing: 1.3px;
+    text-transform: uppercase;
+margin-top: 10px;
+}
+
+.stats-data{
+  display: flex;
+  margin-top: 18px;
+background: transparent;
+}
+.value {
+  font-size: 25px;
+  font-weight: 700;
+    color: #4F46E5;
+    background: transparent; 
+
+}
+.subtitle {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+    background: var(--card); 
+  color: black;
+width: 120px;
+margin-left: 4px;
+  justify-content: center;
+  padding: 0px 0px;
+  border-radius: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+/* -------------------- Mobile (≤ 480px) -------------------- */
+@media (max-width: 480px) {
+  .stat-card {
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .stats-data {
+    margin-top: 14px;
+  }
+
+  .value {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 9px;
+    width: auto;
+    padding: 0 10px;
+    height: 18px;
+    margin-top: 8px;
+  }
+}
+
+/* -------------------- Tablets (481px – 768px) -------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .stat-card {
+    width: 100%;
+    height: 90px;
+  }
+
+  .value {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+}
+
+/* -------------------- Small desktops (769px – 1024px) -------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .stat-card {
+    width: 240px;
+    height: 90px;
+  }
+
+  .value {
+    font-size: 26px;
+  }
+}
+
+/* -------------------- Large screens (≥ 1200px) -------------------- */
+@media (min-width: 1200px) {
+  .stat-card {
+    width: 260px;
+    height: 100px;
+  }
+
+  .value {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+    height: 22px;
+  }
+}

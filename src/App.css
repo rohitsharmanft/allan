@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  --primary-color: #134A45;
+  --secondary-color: #1B8177;
+  --text-color: white;
+  --bg-color: #134A45;
+  --btn-bg: #027b74;
+  --btn-hover-bg: #015f5a;
+  
+}
+
+.filter-buttons{
+  display: flex;
+  gap: 5px;
+}
+/* Spinner Animation */
+.spinner {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.spinner-inner {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 5px solid #4a90e2;
+  border-radius: 50%;
+  animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #4a90e2 transparent transparent transparent;
+}
+
+@keyframes spinner {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  gap: 1.5rem;
+}
+
+.loading-container p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}

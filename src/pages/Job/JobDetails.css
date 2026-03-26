@@ -1,0 +1,118 @@
+.jobdetails-container {
+  max-width: 100%;
+  margin: 10px;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-family: "Satoshi";
+}
+
+.jobdetails-card {
+  padding: 20px;
+  border-radius: 12px;
+  font-family: "Satoshi";
+}
+
+.jobdetails-image {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  object-fit: cover;
+}
+
+.job-tag {
+  display: inline-block;
+  background: #B4E2DD;
+  color: #134A45;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-family: "Satoshi";
+  font-weight: 500;
+}
+
+.job-title {
+  font-size: 28px;
+  color: #222222;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: "Satoshi";
+  font-weight: 700;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.btn-lower {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.job-date {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 1px;
+  font-family: "Satoshi";
+}
+
+.job-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  font-family: "Satoshi";
+  margin-bottom: 25px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .jobdetails-container {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobdetails-card {
+    padding: 25px;
+  }
+  
+  .job-title {
+    font-size: 24px;
+  }
+
+  .jobdetails-image {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobdetails-container {
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .jobdetails-card {
+    padding: 15px;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  .job-description {
+    font-size: 14px;
+  }
+
+  .btn-lower {
+    flex-direction: column;
+  }
+
+  .btn-lower button {
+    width: 100% !important;
+  }
+}
